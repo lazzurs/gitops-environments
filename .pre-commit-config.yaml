@@ -1,0 +1,21 @@
+repos:
+- repo: https://github.com/antonbabenko/pre-commit-terraform
+  rev: v1.96.1
+  hooks:
+    - id: terragrunt_fmt
+    - id: terragrunt_validate
+    - id: terragrunt_validate_inputs
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v5.0.0
+  hooks:
+    - id: check-merge-conflict
+    - id: end-of-file-fixer
+    - id: trailing-whitespace
+    - id: forbid-submodules
+    - id: detect-aws-credentials
+      args:
+        - --allow-missing-credentials
+    - id: detect-private-key
+    - id: check-case-conflict
+    - id: check-yaml
+    - id: sort-simple-yaml
