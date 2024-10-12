@@ -20,6 +20,7 @@ EOF
 
 inputs = {
   name                 = ".github"
+  visibility           = "public"
   license_template     = "MIT"
   vulnerability_alerts = false
 }
