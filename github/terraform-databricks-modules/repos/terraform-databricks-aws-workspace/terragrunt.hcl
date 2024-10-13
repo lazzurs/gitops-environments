@@ -30,4 +30,5 @@ inputs = {
   license_template     = "MIT"
   gitignore_template   = "Terraform"
   vulnerability_alerts = true
+  visibility           = "public"
 }
