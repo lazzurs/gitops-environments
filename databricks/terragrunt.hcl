@@ -1,6 +1,5 @@
 remote_state {
   backend = "s3"
-  //disable_init = true
 
   config = {
     encrypt = true
