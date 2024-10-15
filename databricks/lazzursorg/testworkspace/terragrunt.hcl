@@ -1,12 +1,12 @@
 terraform {
-  source = "github.com/terraform-databricks-modules/terraform-databricks-aws-workspace?ref=4b0d3fe023b4ec197c311a0ff2defadb0c8c5c42"
+  source = "tfr:///terraform-databricks-modules/aws-workspace/databricks?version=0.0.1"
 }
 
 include {
   path = find_in_parent_folders()
 }
 
-# Indicate what region to deploy the resources into
+# Override the provider block to use the S3 backend
 generate "provider" {
   path      = "provider.tf"
   if_exists = "overwrite_terragrunt"
