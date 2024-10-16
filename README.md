@@ -17,7 +17,7 @@ clouds <- each cloud provider is at the top level
       - terragrunt.hcl <- Terragrunt configuration
 ```
 
-### Intertance
+### Inheritance
 
 Inheritance is done by using the `terragrunt.hcl` file in each cloud. This file is used to define the configuration for the default includes in that cloud and it is expected to use the following structure:
 
