@@ -31,4 +31,4 @@ jobs:
           check-latest-tag-only: false
           release: true
           git-user: 'GitHubActions'
-          git-user-email: 'github@ei.aero'
+          git-user-email: 'github@lazzurs.org'
