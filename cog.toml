@@ -29,6 +29,8 @@ authors = []
 [packages]
 aws = { path = "aws" }
 databricks = { path = "databricks" }
-github = { path = "github" }
+github-terraform-databricks-modules = { path = "github/terraform-aws-modules" }
+github-lazzurs = { path = "github/lazzurs" }
+github-terraform-gh-modules = { path = "github/terraform-gh-modules" }
 gcp = { path = "gcp" }
 azure = { path = "azure" }
