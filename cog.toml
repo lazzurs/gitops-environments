@@ -1,5 +1,5 @@
 from_latest_tag = true
-ignore_merge_commits = false
+ignore_merge_commits = true
 disable_changelog = false
 disable_bump_commit = true
 generate_mono_repository_global_tag = true
@@ -8,6 +8,7 @@ skip_ci = "[skip ci]"
 skip_untracked = false
 pre_bump_hooks = []
 post_bump_hooks = [
+    "git push",
     "git push origin --tags"
 ]
 pre_package_bump_hooks = []
