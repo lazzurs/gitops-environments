@@ -31,4 +31,6 @@ inputs = {
   gitignore_template   = "Terraform"
   vulnerability_alerts = true
   visibility           = "public"
+  description          = "Terraform module for creating Databricks workspaces in AWS"
+  has_issues           = true
 }
