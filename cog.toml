@@ -32,6 +32,7 @@ aws = { path = "aws" }
 databricks = { path = "databricks" }
 github-terraform-databricks-modules = { path = "github/terraform-aws-modules" }
 github-lazzurs = { path = "github/lazzurs" }
+github-unicornops = { path = "github/unicornops" }
 github-terraform-gh-modules = { path = "github/terraform-gh-modules" }
 gcp = { path = "gcp" }
 azure = { path = "azure" }
