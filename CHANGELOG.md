@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.6.0 - 2024-10-27
+### Package updates
+- github-unicornops bumped to github-unicornops/v0.1.0
+### Global changes
+#### Features
+- Enable bump commit. - (c123c59) - Rob Lazzurs
+- Adding new package for the unicornops org - (fecaa75) - Rob Lazzurs
+
+- - -
+
 ## v0.1.0 - 2024-10-17
 ### Package updates
 - databricks bumped to databricks/v0.1.0
