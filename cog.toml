@@ -36,3 +36,4 @@ github-unicornops = { path = "github/unicornops" }
 github-terraform-gh-modules = { path = "github/terraform-gh-modules" }
 gcp = { path = "gcp" }
 azure = { path = "azure" }
+cloudflare-unicornops = { path = "cloudflare/unicornops" }
