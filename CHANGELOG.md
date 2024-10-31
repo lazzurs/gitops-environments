@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.9.0 - 2024-10-31
+### Package updates
+- cloudflare-unicornops bumped to cloudflare-unicornops/v0.1.0
+### Global changes
+#### Features
+- Adding unicornops cloudflare pages. - (3473c37) - Rob Lazzurs
+
+- - -
+
 ## v0.8.0 - 2024-10-31
 ### Package updates
 - github-lazzurs bumped to github-lazzurs/v0.4.0
