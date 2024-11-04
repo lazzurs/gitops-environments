@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-lazzurs/v0.5.0 - 2024-11-04
+#### Features
+- Adding the frenchpark-website repo - (2c4e0d3) - Rob Lazzurs
+
+- - -
+
 ## github-lazzurs/v0.4.0 - 2024-10-31
 #### Features
 - Adding a new github repo. - (3820a78) - Rob Lazzurs
