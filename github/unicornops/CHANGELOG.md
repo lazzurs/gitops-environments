@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.3.0 - 2024-11-09
+#### Features
+- Adding product-list repo for UnicornOps - (63c8357) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.2.0 - 2024-10-27
 #### Features
 - Adding UnicornOps blog site. - (f5fa2e7) - Rob Lazzurs
