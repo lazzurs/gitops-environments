@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.12.0 - 2024-12-01
+### Package updates
+- github-lazzurs bumped to github-lazzurs/v0.6.0
+### Global changes
+#### Features
+- Adding new repo for terraform module. - (1a6867d) - Rob Lazzurs
+- Adding org management for databricks modules - (b2a0fb0) - Rob Lazzurs
+
+- - -
+
 ## v0.11.0 - 2024-11-09
 ### Package updates
 - github-unicornops bumped to github-unicornops/v0.3.0

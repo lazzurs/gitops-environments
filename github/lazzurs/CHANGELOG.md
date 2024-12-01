@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-lazzurs/v0.6.0 - 2024-12-01
+#### Features
+- Adding a new Terraform module repo - (204f824) - Rob Lazzurs
+
+- - -
+
 ## github-lazzurs/v0.5.0 - 2024-11-04
 #### Features
 - Adding the frenchpark-website repo - (2c4e0d3) - Rob Lazzurs
