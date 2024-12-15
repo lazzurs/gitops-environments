@@ -1,5 +1,6 @@
 terraform {
-  source = "tfr:///terraform-databricks-modules/aws-workspace/databricks?version=0.0.1"
+  #source = "tfr:///terraform-databricks-modules/aws-workspace/databricks?version=feat%2Fnetwork_firewall"
+  source = "github.com/terraform-databricks-modules/terraform-databricks-aws-workspace?ref=feat%2Fnetwork_firewall"
 }
 
 include {
@@ -22,6 +23,8 @@ inputs = {
   workspace_name        = "testworkspace"
   vpc_cidr              = "10.1.0.0/18"
   databricks_account_id = "7eea6300-240c-4753-8252-24af32f7da4c"
+  allowed_targets       = ["*.databricks.com"]
+  denied_targets        = ["*"]
   tags = {
     "Owner"       = "test"
     "Environment" = "test"
