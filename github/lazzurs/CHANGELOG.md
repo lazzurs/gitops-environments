@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-lazzurs/v0.8.0 - 2025-02-24
+#### Features
+- Adding the community-alert repo. - (2f35faa) - Rob Lazzurs
+
+- - -
+
 ## github-lazzurs/v0.7.0 - 2025-01-01
 #### Features
 - Add new repo - (56468ed) - Rob Lazzurs

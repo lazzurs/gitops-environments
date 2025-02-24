@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.16.0 - 2025-02-24
+### Package updates
+- github-lazzurs bumped to github-lazzurs/v0.8.0
+### Global changes
+
+- - -
+
 ## v0.15.0 - 2025-02-23
 ### Package updates
 - cloudflare-creammaeve bumped to cloudflare-creammaeve/v0.1.0
