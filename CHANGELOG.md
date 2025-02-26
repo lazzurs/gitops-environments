@@ -2,6 +2,41 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.16.0 - 2025-02-24
+### Package updates
+- github-lazzurs bumped to github-lazzurs/v0.8.0
+### Global changes
+
+- - -
+
+## v0.15.0 - 2025-02-23
+### Package updates
+- cloudflare-creammaeve bumped to cloudflare-creammaeve/v0.1.0
+### Global changes
+#### Features
+- Adding new cloudflare website for creammaeve - (9120cdd) - Rob Lazzurs
+
+- - -
+
+## v0.14.0 - 1970-01-01
+### Package updates
+- github-unicornops bumped to github-unicornops/v0.4.0
+### Global changes
+
+- - -
+
+## v0.13.0 - 2025-01-01
+### Package updates
+- github-lazzurs bumped to github-lazzurs/v0.7.0
+- databricks bumped to databricks/v0.3.0
+### Global changes
+#### Features
+- Adding on push hook. - (c2d7188) - Rob Lazzurs
+- Adding pull request workflow. - (bf49880) - Rob Lazzurs
+- Removing Terraform from Dependabot - (1f4e05b) - Rob Lazzurs
+
+- - -
+
 ## v0.12.0 - 2024-12-01
 ### Package updates
 - github-lazzurs bumped to github-lazzurs/v0.6.0

@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## databricks/v0.3.0 - 2025-01-01
+#### Features
+- Changed Databricks test workspace. - (4afe685) - Rob Lazzurs
+- Databricks workspace. - (ba7fb82) - Rob Lazzurs
+
+- - -
+
 ## databricks/v0.1.0 - 2024-10-17
 #### Bug Fixes
 - Remove comment and disable pre-commit check - (1c6f6b4) - Rob Lazzurs
