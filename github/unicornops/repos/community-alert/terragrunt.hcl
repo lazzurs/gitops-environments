@@ -32,4 +32,5 @@ inputs = {
   visibility           = "private"
   description          = "Repo for the frenchpark.ie website"
   has_issues           = true
+  has_wiki             = true
 }
