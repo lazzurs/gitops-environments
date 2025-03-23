@@ -38,3 +38,4 @@ gcp = { path = "gcp" }
 azure = { path = "azure" }
 cloudflare-unicornops = { path = "cloudflare/unicornops" }
 cloudflare-creammaeve = { path = "cloudflare/creammaeve" }
+homelab = { path = "homelab" }
