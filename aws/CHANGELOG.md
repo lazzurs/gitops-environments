@@ -2,6 +2,23 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## aws/v0.3.0 - 2025-03-29
+#### Chores
+- Version updates - (ed38dff) - Rob Lazzurs
+- Version updates - (aed4fff) - Rob Lazzurs
+- Version updates - (5ea9e54) - Rob Lazzurs
+- Version updates - (7ddc5c7) - Rob Lazzurs
+#### Features
+- Updating AWS changelog - (cb004b4) - Rob Lazzurs
+- Adding aireach dev changelog - (1cbfc06) - Rob Lazzurs
+- Upgrading aireach dev module. - (1f83e36) - Rob Lazzurs
+- Update terragrunt configuration for aireach development - (3ac2361) - Rob Lazzurs
+- Adding aireach production - (ad3dbb9) - Rob Lazzurs
+- First working version of aireach module - (620e11c) - Rob Lazzurs
+- Adding aireach-development - (0dc83e8) - Rob Lazzurs
+
+- - -
+
 ## v0.17.0 - 2025-03-29
 ### Package updates
 - github-unicornops bumped to github-unicornops/v0.5.0

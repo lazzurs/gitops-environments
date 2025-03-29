@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.5.0 - 2025-03-29
+#### Chores
+- Moved the community-alert repo to unicornops - (52491c2) - Rob Lazzurs
+#### Features
+- Adding wiki to community-alert repo - (29c94b2) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.4.0 - 2025-01-01
 #### Features
 - Adding unicornops org settings. - (715000b) - Rob Lazzurs
