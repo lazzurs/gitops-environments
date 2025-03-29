@@ -15,6 +15,17 @@ All notable changes to this project will be documented in this file. See [conven
 
 ## v0.17.0 - 2025-03-29
 ### Package updates
+- github-unicornops bumped to github-unicornops/v0.5.0
+- aws bumped to aws/v0.3.0
+- homelab bumped to homelab/v0.1.0
+### Global changes
+#### Features
+- Adding homelab WIP. - (3369577) - Rob Lazzurs
+
+- - -
+
+## v0.17.0 - 2025-03-29
+### Package updates
 - homelab bumped to homelab/v0.1.0
 - github-unicornops bumped to github-unicornops/v0.5.0
 - aws bumped to aws/v0.3.0
