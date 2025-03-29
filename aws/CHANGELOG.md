@@ -2,6 +2,17 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.17.0 - 2025-03-29
+### Package updates
+- github-unicornops bumped to github-unicornops/v0.5.0
+- homelab bumped to homelab/v0.1.0
+- aws bumped to aws/v0.3.0
+### Global changes
+#### Features
+- Adding homelab WIP. - (3369577) - Rob Lazzurs
+
+- - -
+
 ## aws/v0.1.0 - 2024-10-17
 #### Features
 - Adding first controlled object. - (48a9988) - Rob Lazzurs
