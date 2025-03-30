@@ -1,5 +1,5 @@
 terraform {
-  source = "git@github.com:unicornops/community-alert//terraform/lightsail?ref=terraform%2Fv0.4.4"
+  source = "git@github.com:unicornops/community-alert//terraform/lightsail?ref=terraform%2Fv0.5.7"
 }
 
 # Add in stub provider.tf file to ensure terragrunt can run
