@@ -2,8 +2,8 @@ terraform {
   source = "github.com/lazzurs/terraform-cloudflare-pages-github?ref=v0.1.0"
 }
 
-include {
-  path = find_in_parent_folders()
+include "root" {
+  path = find_in_parent_folders("root.hcl")
 }
 
 # Indicate what region to deploy the resources into
