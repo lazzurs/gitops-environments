@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.6.0 - 2025-03-31
+#### Features
+- Adding repos for new unicornops websites. - (68a3b3e) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.5.0 - 2025-03-29
 #### Chores
 - Moved the community-alert repo to unicornops - (52491c2) - Rob Lazzurs
