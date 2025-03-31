@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.2.0 - 2025-03-31
+#### Features
+- Adding README for unicornops cloudflare - (e68990d) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.1.0 - 2024-10-31
 #### Features
 - Adding unicornops cloudflare pages. - (3473c37) - Rob Lazzurs
