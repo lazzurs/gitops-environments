@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.3.1 - 2025-03-31
+#### Bug Fixes
+- Changing repo structure for Terragrunt - (606e48b) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.3.0 - 2025-03-31
 #### Features
 - Adding new websites to unicornops - (244f689) - Rob Lazzurs
