@@ -24,9 +24,9 @@ locals {
 inputs = {
   build_command    = "make cloudflare-deploy"
   destination_dir  = "public"
-  root_dir         = "aireach"
+  root_dir         = "website"
   project_name     = local.project_name
-  github_repo_name = local.project_name
+  github_repo_name = "community-alert"
   preview_environment_variables = {
     "ZOLA_VERSION" = "0.19.2"
   }
