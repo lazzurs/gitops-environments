@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-lazzurs/v0.9.0 - 2025-05-29
+#### Chores
+- Moved the community-alert repo to unicornops - (52491c2) - Rob Lazzurs
+#### Features
+- Adding nomad pre-commit repo - (636c178) - Rob Lazzurs
+
+- - -
+
 ## github-lazzurs/v0.8.0 - 2025-02-24
 #### Features
 - Adding the community-alert repo. - (2f35faa) - Rob Lazzurs

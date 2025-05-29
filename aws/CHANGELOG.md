@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## aws/v0.5.0 - 2025-05-29
+#### Features
+- Adding nomad pre-commit repo - (636c178) - Rob Lazzurs
+
+- - -
+
 ## aws/v0.4.0 - 2025-03-30
 #### Features
 - Adding working version of aireach dev. - (6df6ecc) - Rob Lazzurs

@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.22.0 - 1970-01-01
+### Package updates
+- github-lazzurs bumped to github-lazzurs/v0.9.0
+- aws bumped to aws/v0.5.0
+### Global changes
+
+- - -
+
 ## v0.21.2 - 1970-01-01
 ### Package updates
 - cloudflare-unicornops bumped to cloudflare-unicornops/v0.3.2
