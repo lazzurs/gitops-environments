@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.7.0 - 2025-08-16
+#### Chores
+- remove terragrunt configuration for aireach website - (2314ce1) - Rob Lazzurs
+#### Features
+- Adding new UnicornOps repo - (6b64391) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.6.0 - 2025-03-31
 #### Features
 - Adding repos for new unicornops websites. - (68a3b3e) - Rob Lazzurs
