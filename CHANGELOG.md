@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.24.0 - 2025-08-16
+### Package updates
+- github-lazzurs bumped to github-lazzurs/v0.10.0
+- github-unicornops bumped to github-unicornops/v0.8.0
+### Global changes
+#### Features
+- Move Github to new root.hcl structure - (d5ae7ef) - Rob Lazzurs
+
+- - -
+
 ## v0.23.0 - 1970-01-01
 ### Package updates
 - github-unicornops bumped to github-unicornops/v0.7.0

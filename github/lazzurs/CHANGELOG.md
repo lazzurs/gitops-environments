@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-lazzurs/v0.10.0 - 2025-08-16
+#### Features
+- Move Github to new root.hcl structure - (d5ae7ef) - Rob Lazzurs
+
+- - -
+
 ## github-lazzurs/v0.9.0 - 2025-05-29
 #### Chores
 - Moved the community-alert repo to unicornops - (52491c2) - Rob Lazzurs
