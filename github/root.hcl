@@ -18,6 +18,11 @@ remote_state {
   }
 }
 
+engine {
+  source  = "github.com/gruntwork-io/terragrunt-engine-opentofu"
+  version = "v0.0.22"
+}
+
 inputs = merge(
   yamldecode(file(find_in_parent_folders("global.yaml"))),
   yamldecode(file("cloud.yaml"))
