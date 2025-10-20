@@ -19,14 +19,14 @@ jobs:
         with:
           fetch-depth: 0
       - name: Check for conventional commits
-        uses: cocogitto/cocogitto-action@v3.8
+        uses: cocogitto/cocogitto-action@v4
       - name: Get next version
         id: next_version
         run: |
           echo NEXT_VERSION=`cog bump --auto --dry-run` >> "$GITHUB_ENV"
       - name: Cocogitto tag
         id: tag
-        uses: cocogitto/cocogitto-action@v3
+        uses: cocogitto/cocogitto-action@v4
         with:
           check-latest-tag-only: false
           release: true
