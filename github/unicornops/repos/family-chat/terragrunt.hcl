@@ -21,12 +21,15 @@ EOF
 }
 
 locals {
-  org_vars = yamldecode(file(find_in_parent_folders("org.yaml")))
+  org_vars  = yamldecode(file(find_in_parent_folders("org.yaml")))
+  repo_name = basename(get_terragrunt_dir())
 }
 
 inputs = {
-  name                 = ".github"
-  visibility           = "public"
-  license_template     = "MIT"
+  name                 = local.repo_name
   vulnerability_alerts = true
+  visibility           = "private"
+  description          = "Repo for the family chat project"
+  has_issues           = true
+  has_wiki             = true
 }
