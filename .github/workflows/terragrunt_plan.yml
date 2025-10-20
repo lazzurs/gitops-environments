@@ -11,6 +11,10 @@ jobs:
   terragrunt_plan:
     runs-on: ubuntu-latest
     name: Run Terragrunt Plan for GitHub Directory
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
 
     steps:
       - name: Checkout code
