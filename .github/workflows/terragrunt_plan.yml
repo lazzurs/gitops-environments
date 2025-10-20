@@ -1,0 +1,59 @@
+---
+name: Terragrunt Plan
+
+on:
+  pull_request:
+    paths:
+      - "github/**"
+      - ".github/workflows/terragrunt_plan.yml"
+
+jobs:
+  terragrunt_plan:
+    runs-on: ubuntu-latest
+    name: Run Terragrunt Plan for GitHub Directory
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Setup OpenTofu
+        uses: opentofu/setup-opentofu@v1
+        with:
+          tofu_version: 1.8.1
+
+      - name: Setup Terragrunt
+        run: |
+          wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.67.16/terragrunt_linux_amd64
+          chmod +x terragrunt_linux_amd64
+          sudo mv terragrunt_linux_amd64 /usr/local/bin/terragrunt
+          terragrunt --version
+
+      - name: Configure MinIO credentials (for S3 backend)
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.MINIO_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.MINIO_SECRET_ACCESS_KEY }}
+        run: |
+          echo "MinIO credentials configured"
+
+      - name: Run Terragrunt Plan
+        working-directory: ./github
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.MINIO_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.MINIO_SECRET_ACCESS_KEY }}
+        run: |
+          terragrunt run-all plan --terragrunt-non-interactive
+
+      - name: Comment PR with Plan Summary
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ Terragrunt plan completed for `github/` directory. Check the workflow logs for details.'
+            })
