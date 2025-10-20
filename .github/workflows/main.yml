@@ -3,8 +3,8 @@ name: Tag release
 on:
   push:
     branches:
-      - '!**'
-      - 'main'
+      - "!**"
+      - "main"
 
 jobs:
   tag-release:
@@ -20,6 +20,8 @@ jobs:
           fetch-depth: 0
       - name: Check for conventional commits
         uses: cocogitto/cocogitto-action@v4
+        with:
+          check: true
       - name: Get next version
         id: next_version
         run: |
@@ -30,5 +32,5 @@ jobs:
         with:
           check-latest-tag-only: false
           release: true
-          git-user: 'GitHubActions'
-          git-user-email: 'github@lazzurs.org'
+          git-user: "GitHubActions"
+          git-user-email: "github@lazzurs.org"
