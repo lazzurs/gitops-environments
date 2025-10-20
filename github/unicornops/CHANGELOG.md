@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.9.0 - 2025-10-20
+#### Features
+- Add the family chat repo - (05b93eb) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.8.0 - 2025-08-16
 #### Features
 - Move Github to new root.hcl structure - (d5ae7ef) - Rob Lazzurs

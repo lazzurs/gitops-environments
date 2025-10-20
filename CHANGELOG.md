@@ -2,6 +2,29 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.25.0 - 2025-10-20
+### Package updates
+- github-terraform-gh-modules bumped to github-terraform-gh-modules/v0.1.1
+- github-unicornops bumped to github-unicornops/v0.9.0
+### Global changes
+#### Features
+- Adding the Terragrunt apply workflow - (32f6455) - Rob Lazzurs
+- Ensure Terragrunt has the correct perms - (ff7acee) - Rob Lazzurs
+- Add the family chat repo - (05b93eb) - Rob Lazzurs
+- Adding terragrunt plans for the GitHub dir - (29649fb) - Rob Lazzurs
+- Test using tofu engine in Terragrunt - (dc4e8a1) - Rob Lazzurs
+#### Bug Fixes
+- (**dependabot**) bump cocogitto/cocogitto-action from 3 to 4 - (67a9b93) - dependabot[bot]
+- (**dependabot**) bump actions/checkout from 4 to 5 - (6f084e9) - dependabot[bot]
+- Giving the Terragrunt action required perms - (29b9aa5) - Rob Lazzurs
+- Fix the pull request cocogitto check - (c9eb7b1) - Rob Lazzurs
+- Fix the push action - (60047ef) - Rob Lazzurs
+- Fix tag release step - (0f2ff3c) - Rob Lazzurs
+- Fix the tag release step - (b719b28) - Rob Lazzurs
+- Fixing the tag-release step - (c252925) - Rob Lazzurs
+
+- - -
+
 ## v0.24.0 - 2025-08-16
 ### Package updates
 - github-lazzurs bumped to github-lazzurs/v0.10.0
