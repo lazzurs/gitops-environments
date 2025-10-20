@@ -21,7 +21,7 @@ jobs:
       - name: Check for conventional commits
         uses: cocogitto/cocogitto-action@v4
         with:
-          check: true
+          command: check
       - name: Get next version
         id: next_version
         run: |
