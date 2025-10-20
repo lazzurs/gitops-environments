@@ -30,7 +30,7 @@ jobs:
         id: tag
         uses: cocogitto/cocogitto-action@v4
         with:
-          check-latest-tag-only: false
-          release: true
+          command: bump
+          args: --auto
           git-user: "GitHubActions"
           git-user-email: "github@lazzurs.org"
