@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## aws/v0.6.0 - 2025-10-31
+#### Features
+- Add the family chat dev env - (211cc6f) - Rob Lazzurs
+
+- - -
+
 ## aws/v0.5.0 - 2025-05-29
 #### Features
 - Adding nomad pre-commit repo - (636c178) - Rob Lazzurs
