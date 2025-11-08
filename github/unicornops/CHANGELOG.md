@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.11.0 - 2025-11-08
+#### Features
+- Adding the drive-cost repo. - (759fb17) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.10.0 - 2025-10-31
 #### Features
 - Adding new unicornops repo - (03adc03) - Rob Lazzurs
