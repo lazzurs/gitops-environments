@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.4.0 - 2025-11-08
+#### Features
+- Adding the new drive-cost app. - (ab2f66d) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.3.2 - 2025-04-18
 #### Bug Fixes
 - update root directory and GitHub repo name in Terragrunt configuration - (66e6549) - Rob Lazzurs
