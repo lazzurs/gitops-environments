@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.29.1 - 2025-11-26
+### Package updates
+- cloudflare-unicornops bumped to cloudflare-unicornops/v0.4.1
+### Global changes
+#### Bug Fixes
+- (**dependabot**) bump actions/checkout from 5 to 6 - (49c2171) - dependabot[bot]
+- (**dependabot**) bump actions/github-script from 7 to 8 - (8b9be1d) - dependabot[bot]
+
+- - -
+
 ## v0.29.0 - 1970-01-01
 ### Package updates
 - cloudflare-unicornops bumped to cloudflare-unicornops/v0.4.0

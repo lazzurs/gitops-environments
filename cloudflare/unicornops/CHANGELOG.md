@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.4.1 - 2025-11-26
+#### Bug Fixes
+- Update build command and add environment variables - (f9c0367) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.4.0 - 2025-11-08
 #### Features
 - Adding the new drive-cost app. - (ab2f66d) - Rob Lazzurs
