@@ -22,12 +22,16 @@ locals {
 }
 
 inputs = {
-  build_command                    = "make cloudflare-deploy"
+  build_command                    = "make build"
   destination_dir                  = "dist"
   root_dir                         = "/"
   project_name                     = local.project_name
   github_repo_name                 = "drive-cost"
-  preview_environment_variables    = {}
-  production_environment_variables = {}
+  preview_environment_variables    = {
+    "CF_PAGES_PROJECT_NAME" = local.project_name
+  }
+  production_environment_variables = {
+    "CF_PAGES_PROJECT_NAME" = local.project_name
+  }
   production_branch                = "main"
 }
