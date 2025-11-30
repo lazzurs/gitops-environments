@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.31.0 - 1970-01-01
+### Package updates
+- aws bumped to aws/v0.7.0
+### Global changes
+
+- - -
+
 ## v0.30.0 - 1970-01-01
 ### Package updates
 - github-unicornops bumped to github-unicornops/v0.12.0
