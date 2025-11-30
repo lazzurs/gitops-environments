@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## axiom/v0.3.0 - 2025-11-30
+#### Features
+- Adding Family Chat Axiom dev env - (8a45d4a) - Rob Lazzurs
+
+- - -
+
 ## axiom/v0.2.0 - 2025-11-30
 #### Features
 - Adding Aireach Axiom prd env - (bdf7b02) - Rob Lazzurs
