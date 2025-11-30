@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.33.0 - 1970-01-01
+### Package updates
+- axiom bumped to axiom/v0.2.0
+### Global changes
+
+- - -
+
 ## v0.32.0 - 2025-11-30
 ### Package updates
 - axiom bumped to axiom/v0.1.0
