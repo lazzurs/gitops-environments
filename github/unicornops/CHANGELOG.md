@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.13.0 - 2025-12-09
+#### Features
+- Adding the pagerduty-notify project - (136b32d) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.12.0 - 2025-11-29
 #### Features
 - Adding cloud-weather-map repo - (13d66b8) - Rob Lazzurs

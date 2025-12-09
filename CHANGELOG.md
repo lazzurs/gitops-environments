@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.36.0 - 1970-01-01
+### Package updates
+- github-unicornops bumped to github-unicornops/v0.13.0
+### Global changes
+
+- - -
+
 ## v0.35.0 - 1970-01-01
 ### Package updates
 - axiom bumped to axiom/v0.4.0
