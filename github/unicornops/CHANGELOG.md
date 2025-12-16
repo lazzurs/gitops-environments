@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.15.0 - 2025-12-16
+#### Features
+- Make the oncallnotify repo public - (57d0f34) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.14.0 - 2025-12-12
 #### Features
 - Add terragrunt.hcl for oncallnotify repo configuration - (2dce994) - Rob Lazzurs
