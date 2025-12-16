@@ -28,8 +28,20 @@ locals {
 inputs = {
   name                 = local.repo_name
   vulnerability_alerts = true
-  visibility           = "private"
-  description          = "Repo for the pagerduty-notify project"
+  visibility           = "public"
+  description          = "Repo for the oncallnotify project"
   has_issues           = true
   has_wiki             = true
+  branch_protections_v3 = [
+    {
+      branch                          = "main"
+      require_signed_commits          = false
+      require_code_owner_reviews      = true
+      required_approving_review_count = 1
+      dismiss_stale_reviews           = true
+      require_conversation_resolution = true
+      restrict_pushes                 = true
+      restrict_admins                 = false
+    }
+  ]
 }
