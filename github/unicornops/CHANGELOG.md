@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.17.0 - 2026-01-26
+#### Features
+- Adding the cloud-cost-notify repo - (6f92749) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.16.0 - 2026-01-13
 #### Features
 - Add new repo for github copilot notify - (7901106) - Rob Lazzurs
