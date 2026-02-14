@@ -28,7 +28,19 @@ locals {
 inputs = {
   name                 = local.repo_name
   vulnerability_alerts = true
-  visibility           = "private"
+  visibility           = "public"
   description          = "Uptime Kuma macOS menu bar notification app"
   has_issues           = true
+
+  branch_protections_v4 = [
+    {
+      pattern                = "main"
+      enforce_admins         = true
+      allows_force_pushes    = false
+      allows_deletions       = false
+      required_pull_request_reviews = {
+        dismiss_stale_reviews = true
+      }
+    }
+  ]
 }
