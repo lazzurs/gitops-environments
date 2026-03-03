@@ -27,7 +27,7 @@ locals {
 
 inputs = {
   name                 = local.repo_name
-  license_template     = "GPL"
+  license_template     = "gpl3"
   gitignore_template   = "Swift"
   vulnerability_alerts = true
   visibility           = "private"
