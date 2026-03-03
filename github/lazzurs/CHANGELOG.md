@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-lazzurs/v0.11.2 - 2026-03-03
+#### Bug Fixes
+- Another fix for the seefi-ios license name - (f66e1c8) - Rob Lazzurs
+
+- - -
+
 ## github-lazzurs/v0.11.1 - 2026-03-03
 #### Bug Fixes
 - Fix the license template on seefi-ios - (e36d871) - Rob Lazzurs
