@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-lazzurs/v0.11.0 - 2026-03-03
+#### Features
+- Adding seefi-ios repo - (732797d) - Rob Lazzurs
+
+- - -
+
 ## github-lazzurs/v0.10.0 - 2025-08-16
 #### Features
 - Move Github to new root.hcl structure - (d5ae7ef) - Rob Lazzurs

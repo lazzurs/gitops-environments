@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.42.0 - 1970-01-01
+### Package updates
+- github-lazzurs bumped to github-lazzurs/v0.11.0
+### Global changes
+
+- - -
+
 ## v0.41.0 - 2026-02-14
 ### Package updates
 - github-unicornops bumped to github-unicornops/v0.18.0
