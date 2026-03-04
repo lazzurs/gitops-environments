@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.19.0 - 2026-03-04
+#### Features
+- Adding the seefi-ios project to unicornops - (b9da822) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.18.0 - 2026-02-14
 #### Features
 - Make repo public and add branch protection rules - (970cf38) - Rob Lazzurs
