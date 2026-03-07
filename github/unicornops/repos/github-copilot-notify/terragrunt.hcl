@@ -33,6 +33,10 @@ inputs = {
   has_issues           = true
   has_wiki             = true
 
+  allow_squash_merge   = true
+  allow_merge_commit   = false
+  allow_rebase_merge   = false
+
   branch_protections_v4 = [
     {
       pattern                = "main"
