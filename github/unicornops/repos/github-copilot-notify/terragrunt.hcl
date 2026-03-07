@@ -29,19 +29,19 @@ inputs = {
   name                 = local.repo_name
   vulnerability_alerts = true
   visibility           = "public"
-  description          = "Repo for the github-copilot-notify project"
+  description          = "Repo for the ${local.repo_name} project"
   has_issues           = true
   has_wiki             = true
-  //branch_protections_v3 = [
-  //  {
-  //    branch                          = "main"
-  //    require_signed_commits          = false
-  //    require_code_owner_reviews      = true
-  //    required_approving_review_count = 1
-  //    dismiss_stale_reviews           = true
-  //    require_conversation_resolution = true
-  //    restrict_pushes                 = true
-  //    restrict_admins                 = false
-  //  }
-  //]
+
+  branch_protections_v4 = [
+    {
+      pattern                = "main"
+      enforce_admins         = true
+      allows_force_pushes    = false
+      allows_deletions       = false
+      required_pull_request_reviews = {
+        dismiss_stale_reviews = true
+      }
+    }
+  ]
 }
