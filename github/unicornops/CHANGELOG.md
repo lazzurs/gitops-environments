@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.22.0 - 2026-03-07
+#### Features
+- Enforce squash merge only on repo settings - (b8e17b5) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.21.0 - 2026-03-07
 #### Features
 - Add terragrunt.hcl for nextcloud-deck-macos repo - (3373b64) - Rob Lazzurs
