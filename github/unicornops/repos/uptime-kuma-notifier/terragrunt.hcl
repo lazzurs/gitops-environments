@@ -32,6 +32,10 @@ inputs = {
   description          = "Uptime Kuma macOS menu bar notification app"
   has_issues           = true
 
+  allow_squash_merge   = true
+  allow_merge_commit   = false
+  allow_rebase_merge   = false
+
   branch_protections_v4 = [
     {
       pattern                = "main"

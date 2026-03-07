@@ -32,16 +32,19 @@ inputs = {
   description          = "Repo for the oncallnotify project"
   has_issues           = true
   has_wiki             = true
-  branch_protections_v3 = [
+  allow_squash_merge   = true
+  allow_merge_commit   = false
+  allow_rebase_merge   = false
+
+  branch_protections_v4 = [
     {
-      branch                          = "main"
-      require_signed_commits          = false
-      require_code_owner_reviews      = true
-      required_approving_review_count = 1
-      dismiss_stale_reviews           = true
-      require_conversation_resolution = true
-      restrict_pushes                 = true
-      restrict_admins                 = false
+      pattern                = "main"
+      enforce_admins         = true
+      allows_force_pushes    = false
+      allows_deletions       = false
+      required_pull_request_reviews = {
+        dismiss_stale_reviews = true
+      }
     }
   ]
 }
