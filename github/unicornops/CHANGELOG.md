@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.23.0 - 2026-03-08
+#### Features
+- Update repo settings and branch protections for consistency - (9bf5eaa) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.22.0 - 2026-03-07
 #### Features
 - Enforce squash merge only on repo settings - (b8e17b5) - Rob Lazzurs
