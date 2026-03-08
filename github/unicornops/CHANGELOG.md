@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.24.0 - 2026-03-08
+#### Features
+- Add Terragrunt config for fedihost GitHub repo - (c041b64) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.23.0 - 2026-03-08
 #### Features
 - Update repo settings and branch protections for consistency - (9bf5eaa) - Rob Lazzurs
