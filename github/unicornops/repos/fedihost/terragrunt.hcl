@@ -28,7 +28,7 @@ locals {
 inputs = {
   name                 = local.repo_name
   vulnerability_alerts = true
-  visibility           = "public"
+  visibility           = "private"
   description          = "Repo for the ${local.repo_name} project"
   has_issues           = true
   has_wiki             = true
