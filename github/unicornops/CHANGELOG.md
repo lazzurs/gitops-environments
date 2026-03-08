@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.24.1 - 2026-03-08
+#### Bug Fixes
+- Set repository visibility to private - (aa239b7) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.24.0 - 2026-03-08
 #### Features
 - Add Terragrunt config for fedihost GitHub repo - (c041b64) - Rob Lazzurs
