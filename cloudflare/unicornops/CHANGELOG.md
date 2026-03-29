@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.5.0 - 2026-03-29
+#### Features
+- Adding family chat website - (87e9226) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.4.1 - 2025-11-26
 #### Bug Fixes
 - Update build command and add environment variables - (f9c0367) - Rob Lazzurs
