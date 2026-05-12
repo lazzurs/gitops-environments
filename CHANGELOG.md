@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.52.0 - 2026-05-12
+### Package updates
+- github-unicornops bumped to github-unicornops/v0.27.0
+### Global changes
+#### Bug Fixes
+- (**dependabot**) bump actions/github-script from 8 to 9 - (be26974) - dependabot[bot]
+- (**dependabot**) bump opentofu/setup-opentofu from 1 to 2 - (eb2266f) - dependabot[bot]
+
+- - -
+
 ## v0.51.0 - 1970-01-01
 ### Package updates
 - github-unicornops bumped to github-unicornops/v0.26.0

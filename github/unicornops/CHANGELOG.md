@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.27.0 - 2026-05-12
+#### Features
+- add dollarbox repo to unicornops github org - (282c993) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.26.0 - 2026-05-07
 #### Features
 - add private ansible repo to unicornops github org - (7809966) - Rob Lazzurs
