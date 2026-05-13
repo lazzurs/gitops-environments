@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.6.0 - 2026-05-13
+#### Features
+- add dollarbox cloudflare pages site to unicornops - (856c104) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.5.0 - 2026-03-29
 #### Features
 - Adding family chat website - (87e9226) - Rob Lazzurs
