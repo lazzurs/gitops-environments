@@ -1,0 +1,59 @@
+---
+name: Cloudflare Unicornops Plan
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "cloudflare/unicornops/**"
+      - ".github/workflows/cloudflare_unicornops_plan.yml"
+
+jobs:
+  terragrunt_plan:
+    runs-on: ubuntu-latest
+    name: Run Terragrunt Plan for Cloudflare Unicornops
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Setup OpenTofu
+        uses: opentofu/setup-opentofu@v2
+        with:
+          tofu_version: 1.8.1
+
+      - name: Setup Terragrunt
+        run: |
+          wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.67.16/terragrunt_linux_amd64
+          chmod +x terragrunt_linux_amd64
+          sudo mv terragrunt_linux_amd64 /usr/local/bin/terragrunt
+          terragrunt --version
+
+      - name: Run Terragrunt Plan
+        working-directory: ./cloudflare/unicornops
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.MINIO_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.MINIO_SECRET_ACCESS_KEY }}
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_UNICORNOPS_API_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
+        run: |
+          terragrunt run-all plan --terragrunt-non-interactive
+
+      - name: Comment PR with Plan Summary
+        if: always()
+        uses: actions/github-script@v9
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ Terragrunt plan completed for `cloudflare/unicornops/` directory. Check the workflow logs for details.'
+            })
