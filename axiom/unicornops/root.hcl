@@ -14,7 +14,7 @@ remote_state {
     skip_bucket_enforced_tls           = true
     skip_bucket_root_access            = true
     skip_credentials_validation        = true
-    use_path_style                     = true
+    force_path_style                   = true
   }
 }
 
