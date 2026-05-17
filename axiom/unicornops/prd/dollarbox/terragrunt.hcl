@@ -11,7 +11,7 @@ generate "provider" {
   if_exists = "overwrite_terragrunt"
   contents  = <<EOF
 provider "axiom" {
-  api_token = get_env("AXIOM_TOKEN")
+  api_token = "${get_env("AXIOM_TOKEN")}"
 }
 
 terraform {
