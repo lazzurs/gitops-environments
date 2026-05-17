@@ -10,7 +10,9 @@ generate "provider" {
   path      = "provider.tf"
   if_exists = "overwrite_terragrunt"
   contents  = <<EOF
-provider "axiom" {}
+provider "axiom" {
+  api_token = "${get_env("AXIOM_TOKEN")}"
+}
 
 terraform {
   backend "s3" {}
