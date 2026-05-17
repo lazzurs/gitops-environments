@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.54.0 - 2026-05-17
+### Package updates
+- axiom bumped to axiom/v0.5.0
+### Global changes
+#### Features
+- (**axiom**) add dollarbox production dataset and deploy workflows - (2a12760) - Rob Lazzurs
+- add github actions workflows for cloudflare unicornops terragrunt - (9104ee9) - Rob Lazzurs
+
+- - -
+
 ## v0.53.0 - 1970-01-01
 ### Package updates
 - cloudflare-unicornops bumped to cloudflare-unicornops/v0.6.0

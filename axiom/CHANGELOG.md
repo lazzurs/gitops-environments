@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## axiom/v0.5.0 - 2026-05-17
+#### Features
+- (**axiom**) add dollarbox production dataset and deploy workflows - (2a12760) - Rob Lazzurs
+#### Bug Fixes
+- (**axiom**) use HCL interpolation for AXIOM_TOKEN in provider config - (54f52df) - Rob Lazzurs
+- (**axiom**) pass AXIOM_TOKEN via get_env in provider config - (7e4cdcf) - Rob Lazzurs
+- (**axiom**) use force_path_style for Minio S3 backend compatibility - (e2d865d) - Rob Lazzurs
+
+- - -
+
 ## axiom/v0.4.0 - 2025-11-30
 #### Features
 - Adding cloud-weather Axiom dev env - (68d6202) - Rob Lazzurs
