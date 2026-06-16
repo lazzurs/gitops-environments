@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## axiom/v0.6.0 - 2026-06-16
+#### Features
+- (**axiom**) add dollarbox-k3s production dataset - (4225274) - Rob Lazzurs
+
+- - -
+
 ## axiom/v0.5.0 - 2026-05-17
 #### Features
 - (**axiom**) add dollarbox production dataset and deploy workflows - (2a12760) - Rob Lazzurs
