@@ -16,6 +16,18 @@ terraform {
 EOF
 }
 
+generate "domain" {
+  path      = "domain.tf"
+  if_exists = "overwrite_terragrunt"
+  contents  = <<EOF
+resource "cloudflare_pages_domain" "custom" {
+  account_id   = var.cloudflare_account_id
+  project_name = "${local.project_name}"
+  domain       = "status.dollarbox.dev"
+}
+EOF
+}
+
 locals {
   project_name = basename(get_terragrunt_dir())
 }
