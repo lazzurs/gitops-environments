@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.7.0 - 2026-06-21
+#### Features
+- (**github+cloudflare**) add dollarbox-status repo and Pages project - (ee51ba9) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.6.0 - 2026-05-13
 #### Features
 - add dollarbox cloudflare pages site to unicornops - (856c104) - Rob Lazzurs
