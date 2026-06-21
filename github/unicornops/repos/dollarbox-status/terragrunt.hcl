@@ -27,7 +27,7 @@ locals {
 inputs = {
   name                 = local.repo_name
   vulnerability_alerts = true
-  visibility           = "private"
+  visibility           = "public"
   description          = "Upptime status page for DollarBox"
   has_issues           = true
 }
