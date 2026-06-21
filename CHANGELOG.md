@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.58.0 - 1970-01-01
+### Package updates
+- cloudflare-unicornops bumped to cloudflare-unicornops/v0.8.0
+### Global changes
+
+- - -
+
 ## v0.57.0 - 1970-01-01
 ### Package updates
 - cloudflare-unicornops bumped to cloudflare-unicornops/v0.7.0
