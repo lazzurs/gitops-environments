@@ -57,6 +57,17 @@ resource "cloudflare_zone" "this" {
 # reads every setting including entitlement-gated ones (origin_max_http_version ->
 # "Access denied (999)"). New zones default to Automatic SSL/TLS; always_use_https
 # is enabled at deploy time by family-chat's scripts/cloudflare-enable-always-https.sh.
+#
+# The override briefly existed in state (first apply); destroying it writes
+# read-only settings back and fails, so forget it from state instead. This
+# block can be deleted once the removal has applied.
+removed {
+  from = cloudflare_zone_settings_override.this
+
+  lifecycle {
+    destroy = false
+  }
+}
 
 output "zone_id" {
   value = cloudflare_zone.this.id
