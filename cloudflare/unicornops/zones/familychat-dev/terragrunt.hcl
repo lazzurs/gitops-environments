@@ -13,6 +13,12 @@ include "root" {
   path = find_in_parent_folders("root.hcl")
 }
 
+# The zone is defined inline via the generate blocks below; the self-referencing
+# source is required for terragrunt run-all to discover this module.
+terraform {
+  source = "."
+}
+
 generate "provider" {
   path      = "provider.tf"
   if_exists = "overwrite_terragrunt"
