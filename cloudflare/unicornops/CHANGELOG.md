@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.9.1 - 2026-07-04
+#### Bug Fixes
+- (**cloudflare**) drop zone settings override for familychat.dev - (5ccbde2) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.9.0 - 2026-07-04
 #### Features
 - (**cloudflare**) add familychat.dev zone for family-chat staging - (3390c49) - Rob Lazzurs
