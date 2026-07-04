@@ -53,14 +53,10 @@ resource "cloudflare_zone" "this" {
   plan       = "free"
 }
 
-resource "cloudflare_zone_settings_override" "this" {
-  zone_id = cloudflare_zone.this.id
-
-  settings {
-    always_use_https = "on"
-    ssl              = "strict"
-  }
-}
+# Zone settings are deliberately not managed here: cloudflare_zone_settings_override
+# reads every setting including entitlement-gated ones (origin_max_http_version ->
+# "Access denied (999)"). New zones default to Automatic SSL/TLS; always_use_https
+# is enabled at deploy time by family-chat's scripts/cloudflare-enable-always-https.sh.
 
 output "zone_id" {
   value = cloudflare_zone.this.id
