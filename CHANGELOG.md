@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.59.0 - 2026-07-04
+### Package updates
+- cloudflare-unicornops bumped to cloudflare-unicornops/v0.9.0
+### Global changes
+#### Documentation
+- (**dollarbox**) record the family-chat-staging comped org - (5f4022f) - Rob Lazzurs
+
+- - -
+
 ## v0.58.0 - 1970-01-01
 ### Package updates
 - cloudflare-unicornops bumped to cloudflare-unicornops/v0.8.0

@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.9.0 - 2026-07-04
+#### Features
+- (**cloudflare**) add familychat.dev zone for family-chat staging - (3390c49) - Rob Lazzurs
+#### Bug Fixes
+- (**cloudflare**) make familychat.dev zone discoverable by run-all - (71e41b0) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.8.0 - 2026-06-21
 #### Features
 - (**cloudflare**) add status.dollarbox.dev custom domain to dollarbox-status Pages project - (589ee5a) - Rob Lazzurs
