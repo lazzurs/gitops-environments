@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.59.2 - 1970-01-01
+### Package updates
+- cloudflare-unicornops bumped to cloudflare-unicornops/v0.9.2
+### Global changes
+
+- - -
+
 ## v0.59.1 - 1970-01-01
 ### Package updates
 - cloudflare-unicornops bumped to cloudflare-unicornops/v0.9.1
