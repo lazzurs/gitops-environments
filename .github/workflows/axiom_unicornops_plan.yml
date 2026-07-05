@@ -39,8 +39,10 @@ jobs:
       - name: Run Terragrunt Plan
         working-directory: ./axiom/unicornops
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.MINIO_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.MINIO_SECRET_ACCESS_KEY }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.RUSTFS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.RUSTFS_SECRET_ACCESS_KEY }}
+          AWS_ENDPOINT_URL: https://s3.unicornops.dev
+          AWS_REGION: us-east-1
           AXIOM_TOKEN: ${{ secrets.AXIOM_UNICORNOPS_API_TOKEN }}
         run: |
           terragrunt run-all plan --terragrunt-non-interactive
