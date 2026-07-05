@@ -2,6 +2,17 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.61.0 - 2026-07-05
+### Package updates
+- aws bumped to aws/v0.8.0
+- axiom bumped to axiom/v0.7.0
+- cloudflare-unicornops bumped to cloudflare-unicornops/v0.10.0
+### Global changes
+#### Features
+- (**rustfs**) configure S3 backend for Terragrunt state storage - (00ca0ac) - Rob Lazzurs
+
+- - -
+
 ## v0.60.0 - 2026-07-05
 ### Package updates
 - github-unicornops bumped to github-unicornops/v0.30.0

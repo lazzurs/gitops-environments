@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## axiom/v0.7.0 - 2026-07-05
+#### Features
+- (**rustfs**) configure S3 backend for Terragrunt state storage - (00ca0ac) - Rob Lazzurs
+
+- - -
+
 ## axiom/v0.6.0 - 2026-06-16
 #### Features
 - (**axiom**) add dollarbox-k3s production dataset - (4225274) - Rob Lazzurs

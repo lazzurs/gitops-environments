@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.10.0 - 2026-07-05
+#### Features
+- (**rustfs**) configure S3 backend for Terragrunt state storage - (00ca0ac) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.9.2 - 2026-07-04
 #### Bug Fixes
 - (**cloudflare**) forget zone settings override from state without destroy - (dd0173d) - Rob Lazzurs

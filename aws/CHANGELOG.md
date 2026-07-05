@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## aws/v0.8.0 - 2026-07-05
+#### Features
+- (**rustfs**) configure S3 backend for Terragrunt state storage - (00ca0ac) - Rob Lazzurs
+
+- - -
+
 ## aws/v0.7.0 - 2025-11-30
 #### Features
 - Adding the weather-development AWS account - (71802bc) - Rob Lazzurs
