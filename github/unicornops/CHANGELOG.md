@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-unicornops/v0.30.0 - 2026-07-05
+#### Features
+- add gitops-environments repo configuration for unicornops - (bb5d78b) - Rob Lazzurs
+#### Chores
+- (**dollarbox-status**) make repo public for Upptime status page - (fcf97fd) - Rob Lazzurs
+
+- - -
+
 ## github-unicornops/v0.29.0 - 2026-06-21
 #### Features
 - (**github+cloudflare**) add dollarbox-status repo and Pages project - (ee51ba9) - Rob Lazzurs

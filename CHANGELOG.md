@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.60.0 - 2026-07-05
+### Package updates
+- github-unicornops bumped to github-unicornops/v0.30.0
+### Global changes
+#### Continuous Integration
+- (**cloudflare**) bump OpenTofu to 1.12.3 for removed block support - (81b86da) - Rob Lazzurs
+
+- - -
+
 ## v0.59.2 - 1970-01-01
 ### Package updates
 - cloudflare-unicornops bumped to cloudflare-unicornops/v0.9.2
