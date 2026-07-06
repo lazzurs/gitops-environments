@@ -1,0 +1,2 @@
+# Trigger file for RustFS testing
+# This file ensures workflows run with latest config
