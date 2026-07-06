@@ -43,6 +43,8 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.RUSTFS_SECRET_ACCESS_KEY }}
           AWS_ENDPOINT_URL: https://s3.unicornops.dev
           AWS_REGION: us-east-1
+          AWS_S3_ENDPOINT: https://s3.unicornops.dev
+          AWS_S3_FORCE_PATH_STYLE: true
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_UNICORNOPS_API_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
         run: |
