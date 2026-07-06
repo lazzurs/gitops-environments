@@ -12,5 +12,6 @@ remote_state {
     skip_region_validation              = true
     force_path_style                   = true
     skip_bucket_ssencryption            = true
+    skip_requesting_account_id          = true
   }
 }
