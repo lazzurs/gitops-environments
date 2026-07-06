@@ -2,6 +2,17 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.62.0 - 2026-07-06
+### Package updates
+- cloudflare-unicornops bumped to cloudflare-unicornops/v0.11.0
+- axiom bumped to axiom/v0.8.0
+- aws bumped to aws/v0.9.0
+### Global changes
+#### Features
+- update terragrunt and S3 backend configuration for RustFS - (f63b615) - Rob Lazzurs
+
+- - -
+
 ## v0.61.3 - 2026-07-06
 ### Package updates
 - axiom bumped to axiom/v0.7.3

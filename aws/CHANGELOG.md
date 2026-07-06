@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## aws/v0.9.0 - 2026-07-06
+#### Features
+- update terragrunt and S3 backend configuration for RustFS - (f63b615) - Rob Lazzurs
+
+- - -
+
 ## aws/v0.8.3 - 2026-07-06
 #### Bug Fixes
 - (**rustfs**) add credentials directly to root.hcl for S3 backend - (cf68578) - Rob Lazzurs
