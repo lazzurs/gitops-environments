@@ -13,5 +13,7 @@ remote_state {
     force_path_style                   = true
     skip_bucket_ssencryption            = true
     skip_requesting_account_id          = true
+    access_key                          = "UNICORNOPS_TERRAGRUNT"
+    secret_key                          = "5f5a277a5b4dfc7cf863eb43df132268b3c5197ada39fb80def1bee853808427"
   }
 }
