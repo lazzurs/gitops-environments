@@ -2,6 +2,20 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.61.3 - 2026-07-06
+### Package updates
+- axiom bumped to axiom/v0.7.3
+- cloudflare-unicornops bumped to cloudflare-unicornops/v0.10.3
+- aws bumped to aws/v0.8.3
+### Global changes
+#### Bug Fixes
+- (**rustfs**) add credentials directly to root.hcl for S3 backend - (cf68578) - Rob Lazzurs
+#### Tests
+- (**rustfs**) trigger workflow with updated config - (a9d624a) - Rob Lazzurs
+- (**rustfs**) remove test file - (314c49b) - Rob Lazzurs
+
+- - -
+
 ## v0.61.2 - 2026-07-06
 ### Package updates
 - aws bumped to aws/v0.8.2

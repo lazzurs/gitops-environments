@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## axiom/v0.7.3 - 2026-07-06
+#### Bug Fixes
+- (**rustfs**) add credentials directly to root.hcl for S3 backend - (cf68578) - Rob Lazzurs
+
+- - -
+
 ## axiom/v0.7.2 - 2026-07-06
 #### Bug Fixes
 - (**rustfs**) add skip_requesting_account_id to prevent AWS STS calls - (d364ea7) - Rob Lazzurs

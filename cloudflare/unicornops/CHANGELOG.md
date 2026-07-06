@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.10.3 - 2026-07-06
+#### Bug Fixes
+- (**rustfs**) add credentials directly to root.hcl for S3 backend - (cf68578) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.10.2 - 2026-07-06
 #### Bug Fixes
 - (**rustfs**) add skip_requesting_account_id to prevent AWS STS calls - (d364ea7) - Rob Lazzurs
