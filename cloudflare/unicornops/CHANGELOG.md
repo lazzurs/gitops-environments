@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-unicornops/v0.10.1 - 2026-07-06
+#### Bug Fixes
+- (**rustfs**) add skip_bucket_ssencryption for S3 compatibility - (1cad3a4) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-unicornops/v0.10.0 - 2026-07-05
 #### Features
 - (**rustfs**) configure S3 backend for Terragrunt state storage - (00ca0ac) - Rob Lazzurs

@@ -2,6 +2,21 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.61.1 - 2026-07-06
+### Package updates
+- cloudflare-unicornops bumped to cloudflare-unicornops/v0.10.1
+- axiom bumped to axiom/v0.7.1
+- aws bumped to aws/v0.8.1
+### Global changes
+#### Bug Fixes
+- (**rustfs**) add skip_bucket_ssencryption for S3 compatibility - (1cad3a4) - Rob Lazzurs
+#### Documentation
+- add RustFS setup next steps and bucket creation script - (656821a) - Rob Lazzurs
+#### Tests
+- (**rustfs**) add test file to trigger workflow - (6192e54) - Rob Lazzurs
+
+- - -
+
 ## v0.61.0 - 2026-07-05
 ### Package updates
 - aws bumped to aws/v0.8.0
