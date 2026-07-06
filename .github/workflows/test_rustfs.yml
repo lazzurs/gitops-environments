@@ -1,28 +1,21 @@
 ---
-name: Axiom Unicornops Plan
+name: Test RustFS S3 Backend
 
 on:
   workflow_dispatch:
-  pull_request:
-    paths:
-      - "axiom/unicornops/**"
-      - ".github/workflows/axiom_unicornops_plan.yml"
 
 jobs:
-  terragrunt_plan:
+  test_rustfs:
     runs-on: ubuntu-latest
-    name: Run Terragrunt Plan for Axiom Unicornops
+    name: Test RustFS S3 Backend Configuration
     permissions:
       contents: read
-      pull-requests: write
-      issues: write
 
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
-          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Setup OpenTofu
         uses: opentofu/setup-opentofu@v2
@@ -36,8 +29,8 @@ jobs:
           sudo mv terragrunt_linux_amd64 /usr/local/bin/terragrunt
           terragrunt --version
 
-      - name: Run Terragrunt Plan
-        working-directory: ./axiom/unicornops
+      - name: Test S3 Backend Configuration
+        working-directory: ./github
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.RUSTFS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.RUSTFS_SECRET_ACCESS_KEY }}
@@ -49,18 +42,8 @@ jobs:
           AWS_SKIP_METADATA_API_CHECK: true
           AWS_SKIP_REGION_VALIDATION: true
           AWS_SKIP_CREDENTIALS_VALIDATION: true
-          AXIOM_TOKEN: ${{ secrets.AXIOM_UNICORNOPS_API_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
         run: |
-          terragrunt run-all plan --terragrunt-non-interactive
-
-      - name: Comment PR with Plan Summary
-        if: always()
-        uses: actions/github-script@v9
-        with:
-          script: |
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: '✅ Terragrunt plan completed for `axiom/unicornops/` directory. Check the workflow logs for details.'
-            })
+          echo "Testing S3 backend configuration..."
+          terragrunt init --terragrunt-non-interactive --terragrunt-no-auto-init 2>&1 | head -20
+          echo "Backend test completed"

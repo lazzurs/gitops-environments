@@ -30,7 +30,7 @@ jobs:
 
       - name: Setup Terragrunt
         run: |
-          wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.67.16/terragrunt_linux_amd64
+          wget https://github.com/gruntwork-io/terragrunt/releases/download/v1.1.0/terragrunt_linux_amd64
           chmod +x terragrunt_linux_amd64
           sudo mv terragrunt_linux_amd64 /usr/local/bin/terragrunt
           terragrunt --version
@@ -55,6 +55,10 @@ jobs:
           AWS_REGION: us-east-1
           AWS_S3_ENDPOINT: https://s3.unicornops.dev
           AWS_S3_FORCE_PATH_STYLE: true
+          AWS_SKIP_REQUESTING_ACCOUNT_ID: true
+          AWS_SKIP_METADATA_API_CHECK: true
+          AWS_SKIP_REGION_VALIDATION: true
+          AWS_SKIP_CREDENTIALS_VALIDATION: true
           GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
         run: |
           terragrunt run-all apply --terragrunt-non-interactive
