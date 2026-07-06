@@ -2,6 +2,18 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.61.2 - 2026-07-06
+### Package updates
+- aws bumped to aws/v0.8.2
+- cloudflare-unicornops bumped to cloudflare-unicornops/v0.10.2
+- axiom bumped to axiom/v0.7.2
+### Global changes
+#### Bug Fixes
+- (**rustfs**) add skip_requesting_account_id to prevent AWS STS calls - (d364ea7) - Rob Lazzurs
+- (**rustfs**) add AWS_S3_ENDPOINT and AWS_S3_FORCE_PATH_STYLE env vars - (71792dc) - Rob Lazzurs
+
+- - -
+
 ## v0.61.1 - 2026-07-06
 ### Package updates
 - cloudflare-unicornops bumped to cloudflare-unicornops/v0.10.1

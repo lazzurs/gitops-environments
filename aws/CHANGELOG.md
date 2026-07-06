@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## aws/v0.8.2 - 2026-07-06
+#### Bug Fixes
+- (**rustfs**) add skip_requesting_account_id to prevent AWS STS calls - (d364ea7) - Rob Lazzurs
+
+- - -
+
 ## aws/v0.8.1 - 2026-07-06
 #### Bug Fixes
 - (**rustfs**) add skip_bucket_ssencryption for S3 compatibility - (1cad3a4) - Rob Lazzurs
