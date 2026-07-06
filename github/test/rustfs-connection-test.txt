@@ -1,3 +1,0 @@
-# This file tests RustFS S3 backend connectivity
-# Created: 2026-07-05
-# Purpose: Trigger workflow to verify RustFS backend works
