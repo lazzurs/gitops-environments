@@ -51,7 +51,7 @@ jobs:
           AWS_SKIP_CREDENTIALS_VALIDATION: true
           AXIOM_TOKEN: ${{ secrets.AXIOM_UNICORNOPS_API_TOKEN }}
         run: |
-          terragrunt run-all apply --non-interactive
+          terragrunt run -- run-all apply --non-interactive --auto-approve
 
       - name: Create Issue on Failure
         if: failure()

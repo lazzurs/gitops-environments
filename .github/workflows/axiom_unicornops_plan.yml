@@ -51,7 +51,7 @@ jobs:
           AWS_SKIP_CREDENTIALS_VALIDATION: true
           AXIOM_TOKEN: ${{ secrets.AXIOM_UNICORNOPS_API_TOKEN }}
         run: |
-          terragrunt run-all plan --non-interactive
+          terragrunt run -- run-all plan --non-interactive
 
       - name: Comment PR with Plan Summary
         if: always()
