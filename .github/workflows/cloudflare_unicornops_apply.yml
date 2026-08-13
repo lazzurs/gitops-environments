@@ -24,15 +24,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup OpenTofu
-        uses: opentofu/setup-opentofu@v2
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
         with:
-          tofu_version: 1.12.3
-
-      - name: Create terraform symlink for OpenTofu
-        run: |
-          sudo ln -s $(which tofu) /usr/local/bin/terraform
-          terraform --version
+          terraform_version: 1.8.1
 
       - name: Setup Terragrunt
         run: |
