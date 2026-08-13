@@ -52,7 +52,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_UNICORNOPS_API_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
         run: |
-          terragrunt run-all plan --terragrunt-non-interactive
+          terragrunt run-all plan --non-interactive
 
       - name: Comment PR with Plan Summary
         if: always()

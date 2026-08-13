@@ -45,5 +45,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
         run: |
           echo "Testing S3 backend configuration..."
-          terragrunt init --terragrunt-non-interactive --terragrunt-no-auto-init 2>&1 | head -20
+          terragrunt init --non-interactive --terragrunt-no-auto-init 2>&1 | head -20
           echo "Backend test completed"
