@@ -37,7 +37,7 @@ jobs:
           terragrunt --version
 
       - name: Run Terragrunt Plan
-        working-directory: .
+        working-directory: ./cloudflare/unicornops
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.RUSTFS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.RUSTFS_SECRET_ACCESS_KEY }}
@@ -51,7 +51,6 @@ jobs:
           AWS_SKIP_CREDENTIALS_VALIDATION: true
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_UNICORNOPS_API_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
-        working-directory: ./cloudflare/unicornops
         run: |
           terragrunt run all plan --non-interactive
 

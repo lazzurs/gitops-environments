@@ -50,7 +50,6 @@ jobs:
           AWS_SKIP_REGION_VALIDATION: true
           AWS_SKIP_CREDENTIALS_VALIDATION: true
           AXIOM_TOKEN: ${{ secrets.AXIOM_UNICORNOPS_API_TOKEN }}
-        working-directory: ./axiom/unicornops
         run: |
           terragrunt run all plan --non-interactive
 
