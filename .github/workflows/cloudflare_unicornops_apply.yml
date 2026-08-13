@@ -31,7 +31,7 @@ jobs:
 
       - name: Setup Terragrunt
         run: |
-          wget https://github.com/gruntwork-io/terragrunt/releases/download/v1.1.0/terragrunt_linux_amd64
+          wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.50.0/terragrunt_linux_amd64
           chmod +x terragrunt_linux_amd64
           sudo mv terragrunt_linux_amd64 /usr/local/bin/terragrunt
           terragrunt --version
@@ -52,7 +52,7 @@ jobs:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_UNICORNOPS_API_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
         run: |
-          terragrunt run all apply --non-interactive --auto-approve
+          terragrunt run-all apply --terragrunt-non-interactive --auto-approve
 
       - name: Create Issue on Failure
         if: failure()

@@ -24,7 +24,7 @@ jobs:
 
       - name: Setup Terragrunt
         run: |
-          wget https://github.com/gruntwork-io/terragrunt/releases/download/v1.1.0/terragrunt_linux_amd64
+          wget https://github.com/gruntwork-io/terragrunt/releases/download/v0.50.0/terragrunt_linux_amd64
           chmod +x terragrunt_linux_amd64
           sudo mv terragrunt_linux_amd64 /usr/local/bin/terragrunt
           terragrunt --version
@@ -45,5 +45,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
         run: |
           echo "Testing S3 backend configuration..."
-          terragrunt init --non-interactive --terragrunt-no-auto-init 2>&1 | head -20
+          terragrunt init --terragrunt-non-interactive --terragrunt-no-auto-init 2>&1 | head -20
           echo "Backend test completed"
