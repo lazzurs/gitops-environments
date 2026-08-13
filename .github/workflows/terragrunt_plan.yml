@@ -60,8 +60,9 @@ jobs:
           AWS_SKIP_REGION_VALIDATION: true
           AWS_SKIP_CREDENTIALS_VALIDATION: true
           GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
+        working-directory: ./github
         run: |
-          terragrunt run -- run-all plan --non-interactive
+          terragrunt run all plan --non-interactive
 
       - name: Comment PR with Plan Summary
         if: always()

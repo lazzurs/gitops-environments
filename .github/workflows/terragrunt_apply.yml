@@ -60,8 +60,9 @@ jobs:
           AWS_SKIP_REGION_VALIDATION: true
           AWS_SKIP_CREDENTIALS_VALIDATION: true
           GITHUB_TOKEN: ${{ secrets.TERRAGRUNT_GITHUB_API_TOKEN }}
+        working-directory: ./github
         run: |
-          terragrunt run -- run-all apply --non-interactive --auto-approve
+          terragrunt run all apply --non-interactive --auto-approve
 
       - name: Create Issue on Failure
         if: failure()
