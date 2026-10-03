@@ -1,0 +1,107 @@
+---
+name: RustFS Lazzurs Plan
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "rustfs/**"
+      - ".github/workflows/rustfs_lazzurs_plan.yml"
+
+concurrency:
+  group: rustfs-lazzurs-state
+  cancel-in-progress: false
+
+jobs:
+  rustfs_plan:
+    runs-on: ubuntu-latest
+    name: Run Terragrunt Plan for RustFS (s3.lazzurs.net)
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.LAZZURS_RUSTFS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.LAZZURS_RUSTFS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: eu-west-1
+      AWS_EC2_METADATA_DISABLED: "true"
+      TG_TF_PATH: terraform
+      RUSTFS_ENDPOINT: s3.lazzurs.net:443
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+
+      - name: Normalize RustFS credentials
+        env:
+          RUSTFS_ACCESS_KEY_ID: ${{ secrets.LAZZURS_RUSTFS_ACCESS_KEY_ID }}
+          RUSTFS_SECRET_ACCESS_KEY: ${{ secrets.LAZZURS_RUSTFS_SECRET_ACCESS_KEY }}
+        run: |
+          access_key="${RUSTFS_ACCESS_KEY_ID//$'\r'/}"
+          access_key="${access_key//$'\n'/}"
+          access_key="${access_key#RUSTFS_ACCESS_KEY_ID=}"
+          access_key="${access_key#RUSTFS_ACCESS_KEY=}"
+          secret_key="${RUSTFS_SECRET_ACCESS_KEY//$'\r'/}"
+          secret_key="${secret_key//$'\n'/}"
+          secret_key="${secret_key#RUSTFS_SECRET_ACCESS_KEY=}"
+          secret_key="${secret_key#RUSTFS_SECRET_KEY=}"
+
+          if [[ -z "$access_key" || -z "$secret_key" ]]; then
+            echo "RustFS credentials are not configured"
+            exit 1
+          fi
+
+          echo "::add-mask::$access_key"
+          echo "::add-mask::$secret_key"
+          {
+            printf 'AWS_ACCESS_KEY_ID=%s\n' "$access_key"
+            printf 'AWS_SECRET_ACCESS_KEY=%s\n' "$secret_key"
+            printf 'RUSTFS_USER=%s\n' "$access_key"
+            printf 'RUSTFS_SECRET=%s\n' "$secret_key"
+          } >> "$GITHUB_ENV"
+
+      # The backend signs as eu-west-1, the rustfs provider as us-east-1
+      # (hard-coded in v0.0.8); both must be accepted.
+      - name: Verify RustFS credentials
+        run: |
+          for region in eu-west-1 us-east-1; do
+            curl --silent --show-error --fail-with-body \
+              --aws-sigv4 "aws:amz:${region}:s3" \
+              --user "$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY" \
+              'https://s3.lazzurs.net/rl-terragrunt-state-github?list-type=2&max-keys=1' \
+              > /dev/null
+            echo "signing as ${region}: ok"
+          done
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v4
+        with:
+          terraform_version: 1.5.7
+          terraform_wrapper: false
+
+      - name: Setup Terragrunt
+        run: |
+          wget https://github.com/gruntwork-io/terragrunt/releases/download/v1.1.0/terragrunt_linux_amd64
+          chmod +x terragrunt_linux_amd64
+          sudo mv terragrunt_linux_amd64 /usr/local/bin/terragrunt
+          terragrunt --version
+
+      - name: Run Terragrunt Plan
+        working-directory: ./rustfs/lazzurs
+        run: |
+          terragrunt run --all --non-interactive -- plan
+
+      - name: Comment PR with Plan Summary
+        if: success() && github.event_name == 'pull_request'
+        uses: actions/github-script@v9
+        with:
+          script: |
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: '✅ Terragrunt plan succeeded for `rustfs/lazzurs/`. Check the workflow logs for details.'
+            })
