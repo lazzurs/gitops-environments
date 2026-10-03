@@ -29,7 +29,7 @@ inputs = {
   name                 = local.repo_name
   license_template     = "MIT"
   vulnerability_alerts = true
-  visibility           = "public"
+  visibility           = "private"
   description          = "Static professional CV website for lazzurs.com"
   has_issues           = true
 }
