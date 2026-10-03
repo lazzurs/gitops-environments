@@ -4,8 +4,9 @@
 
 set -euo pipefail
 
-export AWS_ACCESS_KEY_ID="UNICORNOPS_TERRAGRUNT"
-export AWS_SECRET_ACCESS_KEY="5f5a277a5b4dfc7cf863eb43df132268b3c5197ada39fb80def1bee853808427"
+# Credentials come from the environment; never hard-code them here.
+: "${AWS_ACCESS_KEY_ID:?Set AWS_ACCESS_KEY_ID to the RustFS access key}"
+: "${AWS_SECRET_ACCESS_KEY:?Set AWS_SECRET_ACCESS_KEY to the RustFS secret key}"
 export AWS_ENDPOINT_URL="https://s3.unicornops.dev"
 export AWS_REGION="us-east-1"
 

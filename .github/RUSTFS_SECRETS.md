@@ -9,8 +9,8 @@ Set the following secrets in your GitHub repository under **Settings → Secrets
 ### RustFS Credentials
 | Secret Name | Value | Description |
 |-------------|-------|-------------|
-| `RUSTFS_ACCESS_KEY_ID` | `UNICORNOPS_TERRAGRUNT` | Access key for RustFS authentication |
-| `RUSTFS_SECRET_ACCESS_KEY` | `5f5a277a5b4dfc7cf863eb43df132268b3c5197ada39fb80def1bee853808427` | Secret key for RustFS authentication |
+| `RUSTFS_ACCESS_KEY_ID` | RustFS access key (from the password manager) | Access key for RustFS authentication |
+| `RUSTFS_SECRET_ACCESS_KEY` | RustFS secret key (from the password manager) | Secret key for RustFS authentication |
 
 ### Other Required Secrets
 | Secret Name | Description |
@@ -66,8 +66,8 @@ Once the secrets are set, you can test the S3 backend with:
 
 ```bash
 # Set environment variables
-export AWS_ACCESS_KEY_ID=UNICORNOPS_TERRAGRUNT
-export AWS_SECRET_ACCESS_KEY=5f5a277a5b4dfc7cf863eb43df132268b3c5197ada39fb80def1bee853808427
+export AWS_ACCESS_KEY_ID=<rustfs-access-key>
+export AWS_SECRET_ACCESS_KEY=<rustfs-secret-key>
 export AWS_ENDPOINT_URL=https://s3.unicornops.dev
 export AWS_REGION=us-east-1
 

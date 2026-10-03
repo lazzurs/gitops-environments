@@ -19,14 +19,10 @@ You need to create **3 new secrets** in your GitHub repository (`lazzurs/gitops-
 **Example dummy value**: `CHANGE_ME_GITHUB_APP_INSTALLATION_ID`
 
 ### 3. GITHUB_APP_PRIVATE_KEY
-**Value**: The private key in PEM format (starts with `-----BEGIN RSA PRIVATE KEY-----`)
+**Value**: The private key in PEM format (the downloaded .pem file)
 **How to get it**: After creating the GitHub App, click "Generate a private key" in the app settings
 **Example dummy value**:
-```
------BEGIN RSA PRIVATE KEY-----
-CHANGE_ME_PRIVATE_KEY_CONTENT
------END RSA PRIVATE KEY-----
-```
+`<the full contents of the downloaded .pem file>`
 
 ---
 
