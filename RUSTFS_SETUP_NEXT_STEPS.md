@@ -20,8 +20,8 @@ Create the required buckets in RustFS for each environment:
 
 ```bash
 # Set environment variables
-export AWS_ACCESS_KEY_ID=UNICORNOPS_TERRAGRUNT
-export AWS_SECRET_ACCESS_KEY=5f5a277a5b4dfc7cf863eb43df132268b3c5197ada39fb80def1bee853808427
+export AWS_ACCESS_KEY_ID=<rustfs-access-key>
+export AWS_SECRET_ACCESS_KEY=<rustfs-secret-key>
 export AWS_ENDPOINT_URL=https://s3.unicornops.dev
 export AWS_REGION=us-east-1
 
@@ -138,8 +138,8 @@ If workflows fail with `AccessDenied` or `InvalidAccessKeyId`:
    - `RUSTFS_SECRET_ACCESS_KEY`
 
 2. **Verify secret values**:
-   - `RUSTFS_ACCESS_KEY_ID` = `UNICORNOPS_TERRAGRUNT`
-   - `RUSTFS_SECRET_ACCESS_KEY` = `5f5a277a5b4dfc7cf863eb43df132268b3c5197ada39fb80def1bee853808427`
+   - `RUSTFS_ACCESS_KEY_ID` = RustFS access key (from the password manager)
+   - `RUSTFS_SECRET_ACCESS_KEY` = RustFS secret key (from the password manager)
 
 3. **Check workflow environment**:
    - Open a workflow run
