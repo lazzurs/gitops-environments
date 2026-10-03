@@ -22,9 +22,9 @@ jobs:
       pull-requests: write
       issues: write
     env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.RUSTFS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.RUSTFS_SECRET_ACCESS_KEY }}
-      AWS_DEFAULT_REGION: us-east-1
+      AWS_ACCESS_KEY_ID: ${{ secrets.LAZZURS_RUSTFS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.LAZZURS_RUSTFS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: eu-west-1
       AWS_EC2_METADATA_DISABLED: "true"
       TG_TF_PATH: terraform
 
@@ -37,8 +37,8 @@ jobs:
 
       - name: Normalize RustFS credentials
         env:
-          RUSTFS_ACCESS_KEY_ID: ${{ secrets.RUSTFS_ACCESS_KEY_ID }}
-          RUSTFS_SECRET_ACCESS_KEY: ${{ secrets.RUSTFS_SECRET_ACCESS_KEY }}
+          RUSTFS_ACCESS_KEY_ID: ${{ secrets.LAZZURS_RUSTFS_ACCESS_KEY_ID }}
+          RUSTFS_SECRET_ACCESS_KEY: ${{ secrets.LAZZURS_RUSTFS_SECRET_ACCESS_KEY }}
         run: |
           access_key="${RUSTFS_ACCESS_KEY_ID//$'\r'/}"
           access_key="${access_key//$'\n'/}"
@@ -64,9 +64,9 @@ jobs:
       - name: Verify RustFS credentials
         run: |
           curl --silent --show-error --fail-with-body \
-            --aws-sigv4 'aws:amz:us-east-1:s3' \
+            --aws-sigv4 'aws:amz:eu-west-1:s3' \
             --user "$AWS_ACCESS_KEY_ID:$AWS_SECRET_ACCESS_KEY" \
-            'https://s3.unicornops.dev/rl-terragrunt-state-github?list-type=2&max-keys=1' \
+            'https://s3.lazzurs.net/rl-terragrunt-state-github?list-type=2&max-keys=1' \
             > /dev/null
 
       - name: Setup Terraform
