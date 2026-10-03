@@ -2,6 +2,34 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.63.0 - 2026-10-03
+### Package updates
+- github-lazzurs bumped to github-lazzurs/v0.12.0
+### Global changes
+#### Features
+- (**security**) replace PAT with GitHub App authentication - (55a9297) - Rob Lazzurs
+#### Bug Fixes
+- (**cloudflare**) use HashiCorp Terraform instead of OpenTofu - (3b33c13) - Rob Lazzurs
+- (**github**) keep lazzurs state on s3.lazzurs.net - (c590cd7) - Rob Lazzurs
+- (**security**) remove leaked RustFS credentials and add secret scanning - (136b9dc) - Rob Lazzurs
+- (**workflows**) use LAZZURS_RUSTFS_* secrets for s3.lazzurs.net - (8874bd8) - Rob Lazzurs
+- (**workflows**) use existing RUSTFS_* secrets for s3.lazzurs.net - (7437953) - Rob Lazzurs
+- (**workflows**) scope GitHub plan/apply to github/lazzurs - (a8046f6) - Rob Lazzurs
+- (**workflows**) pin Terragrunt v0.67.16 for GitHub plan/apply - (694cddc) - Rob Lazzurs
+- (**workflows**) add terraform symlink for OpenTofu in Cloudflare workflows - (12637f7) - Rob Lazzurs
+- (**workflows**) remove duplicate working-directory entries - (48f8262) - Rob Lazzurs
+- (**workflows**) use 'terragrunt run all' instead of 'run -- run-all' - (d1006f8) - Rob Lazzurs
+- (**workflows**) update to Terragrunt v1.1.0 CLI syntax - (4cdb97d) - Rob Lazzurs
+- (**workflows**) replace --terragrunt-non-interactive with --non-interactive - (26c428e) - Rob Lazzurs
+#### Revert
+- (**workflows**) downgrade Terragrunt to v0.50.0 - (1a10c36) - Rob Lazzurs
+#### Tests
+- (**rustfs**) verify bucket creation script works - (976b04c) - Rob Lazzurs
+#### Continuous Integration
+- (**security**) ignore rotated historical leaks and scan full history weekly - (237b7c2) - Rob Lazzurs
+
+- - -
+
 ## v0.62.0 - 2026-07-06
 ### Package updates
 - cloudflare-unicornops bumped to cloudflare-unicornops/v0.11.0

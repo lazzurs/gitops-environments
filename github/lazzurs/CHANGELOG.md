@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-lazzurs/v0.12.0 - 2026-10-03
+#### Features
+- (**github**) import the existing lazzurs.com repo instead of creating it - (2fae638) - Rob Lazzurs
+- add lazzurs.com repository - (d7f5a1e) - Rob Lazzurs
+#### Bug Fixes
+- (**github**) make lazzurs.com private - (7b340ed) - Rob Lazzurs
+
+- - -
+
 ## github-lazzurs/v0.11.2 - 2026-03-03
 #### Bug Fixes
 - Another fix for the seefi-ios license name - (f66e1c8) - Rob Lazzurs
