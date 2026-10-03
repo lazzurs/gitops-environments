@@ -2,6 +2,18 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.64.0 - 2026-10-03
+### Package updates
+- rustfs-lazzurs bumped to rustfs-lazzurs/v0.1.0
+### Global changes
+#### Features
+- (**rustfs**) manage s3.lazzurs.net with the RustFS Terraform provider - (143098a) - Rob Lazzurs
+#### Chores
+- (**cog**) drop github-unicornops package - (53cbb7b) - Rob Lazzurs
+- (**github**) remove unicornops org configs - (cbfcd8f) - Rob Lazzurs
+
+- - -
+
 ## v0.63.0 - 2026-10-03
 ### Package updates
 - github-lazzurs bumped to github-lazzurs/v0.12.0
