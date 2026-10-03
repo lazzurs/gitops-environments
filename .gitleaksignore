@@ -1,0 +1,11 @@
+# Historical findings only. Each entry pins one commit/file/line; anything
+# new is still reported.
+#
+# s3.unicornops.dev RustFS root key, public 2026-07-05 to 2026-10-03.
+# Rotated 2026-10-03: the old key is rejected (403) and the server audit
+# found no users, service accounts or writes outside CI.
+656821a88fe8879d1a8aa77bdb96934c14eb1c42:scripts/create-rustfs-buckets.sh:generic-api-key:8
+00ca0accfec4f42cc876d8dbf9bf505917ee456f:.github/RUSTFS_SECRETS.md:generic-api-key:70
+656821a88fe8879d1a8aa77bdb96934c14eb1c42:RUSTFS_SETUP_NEXT_STEPS.md:generic-api-key:24
+# Placeholder text ("CHANGE_ME_PRIVATE_KEY_CONTENT"), not a real key.
+55a92977fe75baa198b7b83afd840f84dda4452f:.github/GITHUB_APP_SETUP.md:private-key:22
