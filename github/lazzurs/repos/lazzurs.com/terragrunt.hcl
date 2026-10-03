@@ -33,16 +33,3 @@ inputs = {
   description          = "Static professional CV website for lazzurs.com"
   has_issues           = true
 }
-
-# The repo was created by hand with gh on 2026-10-03, so adopt it rather
-# than create it. Remove this block once the import has been applied.
-generate "import" {
-  path      = "import.tf"
-  if_exists = "overwrite_terragrunt"
-  contents  = <<EOT
-import {
-  to = github_repository.repository
-  id = "lazzurs.com"
-}
-EOT
-}
