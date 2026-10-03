@@ -1,0 +1,5 @@
+---
+# lazzurs.org Cloudflare account ("Rob@lazzurs.org's Account"). DNS for
+# its zones (lazzurs.com) is managed by neamh/octodns, not here.
+cloudflare_account_id: "87dc2b3533806e45ff74e10235ee638d"
+github_owner: "lazzurs"
