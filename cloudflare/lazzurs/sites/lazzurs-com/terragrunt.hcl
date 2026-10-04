@@ -3,7 +3,7 @@ include "root" {
 }
 
 terraform {
-  source = "github.com/lazzurs/terraform-cloudflare-pages-github?ref=v0.2.0"
+  source = "github.com/lazzurs/terraform-cloudflare-pages-github?ref=v0.2.1"
 }
 
 generate "backend" {
