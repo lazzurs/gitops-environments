@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-lazzurs/v0.2.0 - 2026-10-04
+#### Features
+- (**cloudflare**) redirect www.lazzurs.com to lazzurs.com - (a90f8cd) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-lazzurs/v0.1.1 - 2026-10-04
 #### Bug Fixes
 - (**cloudflare**) use pages module v0.2.1 for lazzurs-com - (5ce7101) - Rob Lazzurs
