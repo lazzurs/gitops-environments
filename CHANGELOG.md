@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.65.1 - 1970-01-01
+### Package updates
+- cloudflare-lazzurs bumped to cloudflare-lazzurs/v0.1.1
+### Global changes
+
+- - -
+
 ## v0.65.0 - 2026-10-04
 ### Package updates
 - cloudflare-lazzurs bumped to cloudflare-lazzurs/v0.1.0

@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## cloudflare-lazzurs/v0.1.1 - 2026-10-04
+#### Bug Fixes
+- (**cloudflare**) use pages module v0.2.1 for lazzurs-com - (5ce7101) - Rob Lazzurs
+
+- - -
+
 ## cloudflare-lazzurs/v0.1.0 - 2026-10-04
 #### Features
 - (**cloudflare**) manage the lazzurs.org account and the lazzurs.com Pages site - (4051e58) - Rob Lazzurs
