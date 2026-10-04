@@ -33,6 +33,7 @@ databricks = { path = "databricks" }
 github-terraform-databricks-modules = { path = "github/terraform-aws-modules" }
 github-lazzurs = { path = "github/lazzurs" }
 rustfs-lazzurs = { path = "rustfs/lazzurs" }
+cloudflare-lazzurs = { path = "cloudflare/lazzurs" }
 github-terraform-gh-modules = { path = "github/terraform-gh-modules" }
 gcp = { path = "gcp" }
 azure = { path = "azure" }
