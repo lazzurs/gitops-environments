@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## v0.65.0 - 2026-10-04
+### Package updates
+- cloudflare-lazzurs bumped to cloudflare-lazzurs/v0.1.0
+### Global changes
+#### Features
+- (**cloudflare**) manage the lazzurs.org account and the lazzurs.com Pages site - (4051e58) - Rob Lazzurs
+
+- - -
+
 ## v0.64.0 - 2026-10-03
 ### Package updates
 - rustfs-lazzurs bumped to rustfs-lazzurs/v0.1.0
