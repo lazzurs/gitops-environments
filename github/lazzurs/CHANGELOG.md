@@ -2,6 +2,14 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## github-lazzurs/v0.13.0 - 2026-11-23
+#### Features
+- (**github**) add lazzurs/ringmaster repository - (b018c5f) - Rob Lazzurs
+#### Chores
+- (**github**) remove the applied lazzurs.com import block - (ef29c15) - Rob Lazzurs
+
+- - -
+
 ## github-lazzurs/v0.12.0 - 2026-10-03
 #### Features
 - (**github**) import the existing lazzurs.com repo instead of creating it - (2fae638) - Rob Lazzurs
